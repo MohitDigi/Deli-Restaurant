@@ -73,6 +73,7 @@ body {
   color: white;
   border: 2px solid white;
   font-weight: 600;
+  letter-spacing: 2px;
 }
 .footer-reservation-btn:hover {
   background-color: white;
@@ -92,36 +93,68 @@ body {
   margin: 0 auto;
 }
 
-
 /* Reservation Section start */
-.reservation-section-wrapper{
-    padding: 4em 0;
-    max-width: 640px;
-    margin: auto;
-    text-align: center;
-    font-size: 14px;
+.reservation-section-wrapper {
+  padding: 4em 0;
+  max-width: 640px;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
 }
-.reservation-section-title h2{
-    font-size: 48px;
-    font-weight: 600;  
+.reservation-section-title h2 {
+  font-size: 48px;
+  font-weight: 600;
 }
-.reservation-section-number a{
-    font-size: 48px;
-    font-weight: 700;
+.reservation-section-number a {
+  font-size: 48px;
+  font-weight: 700;
 }
-.reservation-section-number a{
-    text-decoration: none;
-    color: #000;
-
+.reservation-section-number a {
+  text-decoration: none;
+  color: #000;
 }
-.reservation-section-btn{
-    padding: 14px 24px;
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    font-weight: 600;
-    letter-spacing: 2px;
+.reservation-section-btn {
+  padding: 14px 24px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.reservation-section-btn:hover {
+  background-color: black;
+  color: white;
 }
 .reservation-widget:not(:last-child) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
+}
+
+/* footer image */
+.footer-image {
+  position: relative;
+}
+.footer-image img {
+  position: absolute;
+  right: 0;
+  bottom: -115px;
+}
+
+.testimonial-section{
+    background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/08/testimonail-section-bg-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.testimonial-section-wrapper{
+    width: 70%;
+    margin: auto;
+}
+.testimonial-bg-overlay{
+    background: #000;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+.inner-testimonial-section{
+
+}
