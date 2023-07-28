@@ -1,0 +1,11 @@
+.header-bg-img{
+    background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/08/homepage-hero-bg-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+}
