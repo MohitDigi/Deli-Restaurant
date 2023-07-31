@@ -211,7 +211,7 @@ body {
 .team-section-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 75%;
   margin: auto;
 }
 .team-left-section {
@@ -334,7 +334,6 @@ body {
 .relax-section {
   background: #000;
   color: white;
-  
 }
 .relax-wrapper {
   width: 80%;
@@ -349,14 +348,172 @@ body {
 .table-content h6 {
   letter-spacing: 2px;
 }
-.relax-title-wrapper{
+.relax-title-wrapper {
   display: flex;
 }
-.divider{
+.divider {
   padding: 15px 0;
 }
-.divider span{
+.divider span {
   width: 100%;
   border-top: 1px solid #7a7a7a;
+}
+/* Header */
+.header-section {
+  background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/08/homepage-hero-bg-img.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
 
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1a1a1a;
+  height: 100%;
+  width: 100%;
+  opacity: 0.56;
+}
+
+.header-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 20px;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+}
+.logo-header img {
+  height: 35px;
+  width: fit-content;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul li {
+  padding: 0 16px;
+  font-size: 16px;
+}
+
+.navbar .reservation {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 14px 24px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.navbar .reservation:hover {
+  color: black;
+  background-color: #fff;
+}
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+.icon-arrow svg {
+  height: 0.6em;
+  width: 0.6em;
+  position: relative;
+  margin-left: 10px;
+  fill: white;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-top: 1px solid #f5c61c;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #fff;
+}
+
+.dropdown-content a:hover {
+  color: #fdcf28;
+}
+
+.content-body {
+  display: flex;
+  flex-direction: column;
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding: 50px 0 0 0;
+  align-items: center;
+}
+
+.tagline {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.content-body h1 {
+  font-size: 71px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.content-body p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.vertical-line {
+  border-top: 80px solid #fff;
+  width: 1px;
+  margin: 5% 0 0;
+}
+
+.scroll-down a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin: 20px 0 4px 0;
 }
