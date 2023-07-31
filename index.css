@@ -8,6 +8,7 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+/* img{width: 100%;} */
 .header-bg-img {
   background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/08/homepage-hero-bg-img.jpg);
   background-position: center center;
@@ -139,22 +140,223 @@ body {
   bottom: -115px;
 }
 
-.testimonial-section{
-    background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/08/testimonail-section-bg-1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.testimonial-section {
+  background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/08/testimonail-section-bg-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 100px 0 30px;
+  position: relative;
 }
-.testimonial-section-wrapper{
-    width: 70%;
-    margin: auto;
+.testimonial-section-wrapper {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  z-index: 1;
 }
-.testimonial-bg-overlay{
-    background: #000;
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
+.testimonial-bg-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #1a1a1ad1 80%, white 80%);
+  opacity: 1;
 }
-.inner-testimonial-section{
+.testimonial-card {
+  display: flex;
+}
+.testimonial-text {
+  margin-bottom: 20px;
+}
+.testimonial-details {
+  background: #000;
+  color: white;
+  padding: 56px 30px 40px;
+  border-radius: 12px;
+}
+.testimonial-item {
+  margin-right: 32px;
+}
+.testimonial-image img {
+  width: 80px;
+  border: 6px solid #f5c61c;
+  border-radius: 50%;
+  margin-bottom: -32px;
+}
+.testimonial-subheading {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+.testimonial-heading {
+  /* font-size: 2rem; */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.25em;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+.inner-testimonial-section {
+  margin-top: 40px;
+}
+
+/* team section */
+.team-section {
+  padding: 110px 0;
+}
+.team-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+.team-left-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.team-left-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.team-heading {
+  font-size: 1.8em;
+  color: #1a1a1a;
+}
+.team-description {
+  font-size: 16px;
+  color: #7a7a7a;
+  width: 75%;
+}
+.team-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.team-image img {
+  height: auto;
+  max-width: 100%;
+}
+/* Feature image section */
+.feature-image-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 100px 0 0 0;
+  width: 90%;
+  margin: auto;
+}
+
+.feature-item {
+  display: flex;
+}
+.gallery-item:not(:last-child) {
+  padding: 0 32px 32px 0;
+}
+
+.gallery-item img {
+  margin: 0 auto;
+  width: 100%;
+}
+/* Discover image section */
+.discover-image-section {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  padding: 104px 0 0 0;
+}
+.discover-left-section,
+.discover-right-section {
+  width: 50%;
+}
+.discover-heading h2 {
+  font-size: 48px;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+.discover-image-section p {
+  color: #7a7a7a;
+  width: 75%;
+  margin-bottom: 2em;
+}
+.discover-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.discover-details h5 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.discover-details p {
+  margin-bottom: 80px;
+}
+/* Signature menu */
+.signature-menu {
+  background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/08/signeture-bg.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  padding: 104px 0;
+}
+.signature-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  width: 70%;
+}
+.signature-bg-overlay {
+  background-color: #1a1a1a;
+  opacity: 0.72;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.signature-container {
+  width: 50%;
+}
+.signature-title {
+  font-size: 1em;
+}
+.signature-heading {
+  font-size: 2em;
+}
+/* Relax-Section */
+.relax-section {
+  background: #000;
+  color: white;
+  
+}
+.relax-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.relax-inner-section {
+  display: flex;
+}
+.table-content:not(:last-child) {
+  margin-bottom: 4px;
+}
+.table-content h6 {
+  letter-spacing: 2px;
+}
+.relax-title-wrapper{
+  display: flex;
+}
+.divider{
+  padding: 15px 0;
+}
+.divider span{
+  width: 100%;
+  border-top: 1px solid #7a7a7a;
 
 }
