@@ -5,10 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Open Sans", sans-serif;
 }
-/* img{width: 100%;} */
+img {
+  width: 100%;
+}
 .header-bg-img {
   background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/08/homepage-hero-bg-img.jpg);
   background-position: center center;
@@ -138,6 +143,7 @@ body {
   position: absolute;
   right: 0;
   bottom: -115px;
+  width: 225px;
 }
 
 .testimonial-section {
@@ -172,17 +178,20 @@ body {
 .testimonial-text {
   margin-bottom: 20px;
 }
-.testimonial-details {
+.testimonial-wrapper {
   background: #000;
   color: white;
   padding: 56px 30px 40px;
   border-radius: 12px;
 }
+.testimonial-details {
+  margin-bottom: 20px;
+}
 .testimonial-item {
   margin-right: 32px;
 }
 .testimonial-image img {
-  width: 80px;
+  width: auto;
   border: 6px solid #f5c61c;
   border-radius: 50%;
   margin-bottom: -32px;
@@ -199,6 +208,11 @@ body {
   line-height: 1.25em;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
+}
+.testimonial-name {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .inner-testimonial-section {
   margin-top: 40px;
@@ -220,8 +234,9 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
-.team-left-section {
-  width: 50%;
+.team-left-section,
+.team-right-section {
+  width: 45%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -233,7 +248,7 @@ body {
 .team-description {
   font-size: 16px;
   color: #7a7a7a;
-  width: 75%;
+  width: 100%;
 }
 .team-item:not(:last-child) {
   margin-bottom: 20px;
@@ -241,6 +256,9 @@ body {
 .team-image img {
   height: auto;
   max-width: 100%;
+}
+.w-60 {
+  width: 60%;
 }
 /* Feature image section */
 .feature-image-section {
@@ -267,13 +285,14 @@ body {
 /* Discover image section */
 .discover-image-section {
   display: flex;
+  justify-content: space-between;
   width: 70%;
   margin: auto;
   padding: 104px 0 0 0;
 }
 .discover-left-section,
 .discover-right-section {
-  width: 50%;
+  width: 45%;
 }
 .discover-heading h2 {
   font-size: 48px;
@@ -282,7 +301,7 @@ body {
 }
 .discover-image-section p {
   color: #7a7a7a;
-  width: 75%;
+  width: auto;
   margin-bottom: 2em;
 }
 .discover-item:not(:last-child) {
@@ -326,38 +345,118 @@ body {
 }
 .signature-title {
   font-size: 1em;
+  text-transform: uppercase;
 }
 .signature-heading {
   font-size: 2em;
 }
 /* Relax-Section */
-.relax-section {
-  background: #000;
-  color: white;
+
+.menu {
+  background-color: #1a1a1a;
+  color: #fff;
 }
-.relax-wrapper {
-  width: 80%;
-  margin: 0 auto;
-}
-.relax-inner-section {
+
+.menu .menu-content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.table-content:not(:last-child) {
-  margin-bottom: 4px;
+
+.menu-content > .row4,
+.menu-content > .row2,
+.menu-content > .row5 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* justify-content: space-between; */
 }
-.table-content h6 {
+
+.row1 {
+  font-size: 1em;
   letter-spacing: 2px;
 }
-.relax-title-wrapper {
-  display: flex;
-}
-.divider {
-  padding: 15px 0;
-}
-.divider span {
+
+.row2 *,
+.row5 * {
   width: 100%;
+  text-align: center;
+}
+
+.row2 span,
+.row5 span {
+  display: flex;
   border-top: 1px solid #7a7a7a;
 }
+
+.row2 .col2 {
+  font-size: 2em;
+  margin: 0 0.6em;
+}
+
+.row3 {
+  margin-top: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.row3 > p {
+  width: 66%;
+  margin: 0 auto 20px;
+}
+
+.row4 {
+  margin-top: 24px;
+  margin-bottom: 64px;
+}
+.left-menu {
+  width: 50%;
+  margin-right: 80px;
+}
+
+.right-menu {
+  width: 50%;
+  margin-left: 80px;
+}
+
+.row4 li {
+  list-style: none;
+}
+
+.row4 li h6 {
+  font-size: 13px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.row4 li p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+  color: #7a7a7a;
+}
+
+.row4 li hr {
+  border: 1px dashed #7a7a7a;
+  margin-bottom: 24px;
+}
+.view-all {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid #fff;
+  padding: 14px 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.view-all:hover {
+  color: #1a1a1a;
+  background-color: #fff;
+}
+
 /* Header */
 .header-section {
   background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/08/homepage-hero-bg-img.jpg);
@@ -386,9 +485,10 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  max-width: 1200px;
   align-items: center;
   min-height: 70px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -478,8 +578,9 @@ body {
   max-width: 920px;
   margin: 0 auto;
   text-align: center;
+  justify-content: center;
+  min-height: 100vh;
   color: #fff;
-  padding: 50px 0 0 0;
   align-items: center;
 }
 
@@ -490,7 +591,7 @@ body {
 }
 
 .content-body h1 {
-  font-size: 71px;
+  font-size: 70px;
   line-height: 1.3;
   margin-bottom: 20px;
 }
@@ -516,4 +617,187 @@ body {
   font-size: 11px;
   letter-spacing: 2px;
   margin: 20px 0 4px 0;
+}
+/* Coffee-cup Image  */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 104px 50px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.coffee {
+  /* position: absolute; */
+  padding: 0;
+}
+
+.coffee-cups {
+  position: absolute;
+  text-align: left;
+  margin-top: -284px;
+  width: auto;
+}
+
+/* Media Queries */
+@media (max-width: 921px) {
+  .discover-heading h2 {
+    font-size: 32px;
+  }
+  .discover-image-section p {
+    color: #7a7a7a;
+    font-size: 14px;
+    width: auto;
+    margin-bottom: 2em;
+  }
+  .discover-image-section {
+    width: 90%;
+    padding: 80px 0;
+  }
+  .coffee-cups {
+    margin-top: -150px;
+    width: 20em;
+    left: 50px;
+  }
+  .team-description {
+    font-size: 14px;
+  }
+  .team-heading h2 {
+    font-size: 32px;
+    color: #1a1a1a;
+  }
+  .team-section {
+    padding: 40px 0;
+  }
+  .testimonial-card {
+    display: block;
+  }
+  .testimonial-wrapper {
+    padding: 56px 30px 40px;
+    margin-bottom: 42px;
+  }
+  .testimonial-section-wrapper {
+    width: 90%;
+  }
+  .testimonial-subheading {
+    font-size: 32px;
+  }
+  /* .testimonial-section {
+    padding: 60px 0;
+  } */
+  .reservation-section-wrapper {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .discover-image-section {
+    display: block;
+    width: 90%;
+  }
+  .discover-left-section,
+  .discover-right-section {
+    width: 100%;
+  }
+  .row2 .col2 {
+    font-size: 16px;
+  }
+  .row3 > p {
+    width: 100%;
+  }
+  .menu-content > .row4,
+  .menu-content > .row2,
+  .menu-content > .row5 {
+    display: block;
+  }
+  .left-menu,
+  .right-menu {
+    width: 100%;
+    margin: 0px;
+  }
+  .row2 span,
+  .row5 span {
+    display: none;
+  }
+  .container {
+    padding: 70px 50px;
+  }
+  .signature-wrapper {
+    width: 90%;
+  }
+  .signature-container {
+    width: 100%;
+  }
+  .signature-title {
+    font-size: 1em;
+  }
+  .signature-heading {
+    font-size: 1em;
+  }
+  .footer-image img {
+    position: absolute;
+    right: 0;
+    bottom: -65px;
+    width: 150px;
+  }
+  .footer-wrapper {
+    display: block;
+    width: 80%;
+  }
+  .footer-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .reservation-section-wrapper {
+    padding-bottom: 50px;
+  }
+  .coffee-cups {
+    margin-top: -90px;
+  }
+  .navbar {
+    display: none;
+  }
+  .content-body h1 {
+    font-size: 46px;
+  }
+  .content-body p {
+    width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .feature-item {
+    display: block;
+  }
+  .gallery-item {
+    margin-bottom: 15px;
+  }
+  .gallery-item:not(:last-child) {
+    padding: 0;
+  }
+  .content-body h1 {
+    font-size: 32px;
+  }
+  .content-body p {
+    width: 75%;
+  }
+  .team-section-wrapper {
+    display: block;
+  }
+  .team-left-section,
+  .team-right-section {
+    width: 100%;
+  }
+  .w-60 {
+    width: 100%;
+  }
+  .copywrite-wrapper {
+    width: 90%;
+  }
+  .footer {
+    padding: 2em 0;
+  }
+  .footer-image img {
+    width: 100px;
+  }
 }
