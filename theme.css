@@ -1,23 +1,22 @@
-.color-platete{
-display: flex;
-justify-content: center;
+.color-platete {
+  display: flex;
+  justify-content: center;
 }
-.color-platete div{
-    color:#1a1a1a;
-    border-radius: 50px;
-    width: 40px;
-    border: 2px solid #000;
-    text-align: center;
-    margin: 10px 10px 10px 0;
-    padding: 1px 10px;
-
+.color-platete div {
+  color: #1a1a1a;
+  border-radius: 50px;
+  width: 40px;
+  border: 2px solid #000;
+  text-align: center;
+  margin: 10px 10px 10px 0;
+  padding: 1px 10px;
 }
-.red-color{
- background:red;
+.red-color {
+  background: rgb(255, 97, 97);
 }
-.green-color{
-background: green;
+.green-color {
+  background:#63d063;
 }
-.yellow-color{
-background: yellow;
+.yellow-color {
+  background: rgb(255, 255, 94);
 }

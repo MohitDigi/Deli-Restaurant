@@ -183,6 +183,10 @@ img {
   color: white;
   padding: 56px 30px 40px;
   border-radius: 12px;
+  position: relative;
+}
+.testimonial-details-wrapper{
+  position: relative;
 }
 .testimonial-details {
   margin-bottom: 20px;
@@ -195,6 +199,8 @@ img {
   border: 6px solid #f5c61c;
   border-radius: 50%;
   margin-bottom: -32px;
+  position: relative;
+  z-index: 2;
 }
 .testimonial-subheading {
   font-size: 2rem;
@@ -355,12 +361,15 @@ img {
 .menu {
   background-color: #1a1a1a;
   color: #fff;
+  position: relative;
 }
 
 .menu .menu-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .menu-content > .row4,
