@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Deli Restaurant</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="theme.css">
   </head>
   <body>
     <div class="main-wrapper">
       <!-- Header Section -->
+      <div class="color-platete">
+        <div class="red-color">R</div>
+        <div class="green-color" >G</div>
+        <div class="yellow-color">Y</div>
+      </div>
       <section class="header-section">
-        <div class="header-overlay"></div>
+        <div class="bg-overlay"></div>
         <div class="header-wrapper">
           <div class="header">
             <div class="logo-header">
@@ -41,7 +47,20 @@
                 <li><a class="reservation" href="/">RESERVATION</a></li>
               </ul>
             </div>
-          </div>
+            <button class="hamburger-icon" onclick="toggleMenu()" onblur="onBlurChange()"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" fill="white" width="40" height="40" viewBox="0 0 50 50">
+              <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+              </svg></button>
+            </div>
+            <div id="side-menu" class="side-menu">
+              <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Menu</li>
+                <li>Testimonial</li>
+                <li>Contact</li>
+                <li><a class="reservation" href="/">RESERVATION</a></li>
+              </ul>
+            </div>
           <div class="content-body">
             <p class="tagline mb-20">GOOD PLACE. GOOD FOOD</p>
             <h1 class="mb-20">
@@ -81,6 +100,7 @@
             </div>
           </div>
         </div>
+        
       </section>
 
       <!-- Discover-image-section -->
@@ -229,7 +249,7 @@
       
       <!-- Signature menu -->
       <section class="signature-menu">
-        <div class="signature-bg-overlay"></div>
+        <div class="bg-overlay"></div>
         <div class="signature-wrapper">
           <div class="signature-container">
             <div class="signature-title mb-20">
@@ -623,5 +643,7 @@
         </div>
       </section>
     </div>
+    <!-- Script -->
+    <script src="./index.js"></script>
   </body>
 </html>

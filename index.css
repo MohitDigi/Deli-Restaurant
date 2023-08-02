@@ -467,7 +467,7 @@ img {
   color: #fff;
 }
 
-.header-overlay {
+.bg-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -526,6 +526,46 @@ img {
 .navbar .reservation:hover {
   color: black;
   background-color: #fff;
+}
+.hamburger-icon {
+  display: none;
+  background: transparent;
+  border: none;
+}
+.side-menu {
+  display: none;
+}
+/* Side Menu */
+#side-menu {
+  background: white;
+  color: #7a7a7a;
+  padding: 1em;
+}
+#side-menu ul {
+  list-style: none;
+ 
+  height: 100%;
+}
+
+#side-menu ul li {
+  /* border-bottom: 1px solid #7a7a7a; */
+  padding: 10px;
+}
+
+#side-menu .reservation {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 14px 24px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+#side-menu .reservation:hover {
+  color: white;
+  background-color: #1a1a1a;
 }
 
 .dropbtn {
@@ -754,9 +794,13 @@ img {
   .coffee-cups {
     margin-top: -90px;
   }
-  .navbar {
+  .navbar ul {
     display: none;
   }
+  .hamburger-icon {
+    display: inline;
+  }
+  
   .content-body h1 {
     font-size: 46px;
   }
