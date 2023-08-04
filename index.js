@@ -1,4 +1,7 @@
 const btn = document.querySelector("#side-menu");
+const colorBtn = document.querySelector("#color-menu");
+
+const palette = document.querySelector(".color-palette-icon");
 
 const redbtn = document.querySelector(".red-color");
 const greenbtn = document.querySelector(".green-color");
@@ -14,7 +17,7 @@ const colorChange = (color) => {
   headerOverlay.forEach((ele) => {
     ele.style.backgroundColor = color;
     ele.style.opacity = 0.08;
-  })
+  });
 };
 // Color theme
 redbtn.addEventListener("click", () => colorChange("red"));
@@ -33,5 +36,13 @@ const toggleMenu = () => {
 const onBlurChange = () => {
   btn.style.display = "none";
 };
-
-const colorArray = [""];
+// Toggle Color menu bar
+const toggleColorMenu = () => {
+  colorBtn.style.display == "block"
+    ? ((colorBtn.style.display = "none"))
+    : ((colorBtn.style.display = "block"))
+};
+const onBlurColorChange = () => {
+  colorBtn.style.display = "none";
+};
+ colorBtn.addEventListener('blur', () => colorBtn.style.display= "none");

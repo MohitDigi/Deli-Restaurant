@@ -1,8 +1,12 @@
-.color-platete {
-  display: flex;
-  justify-content: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Montserrat:wght@100;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100&display=swap");
+.color-palette {
+  /* border-radius: 10px; */
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
 }
-.color-platete div {
+.color-palette div {
   color: #1a1a1a;
   border-radius: 50px;
   width: 40px;
@@ -15,8 +19,43 @@
   background: rgb(255, 97, 97);
 }
 .green-color {
-  background:#63d063;
+  background: #63d063;
 }
 .yellow-color {
   background: rgb(255, 255, 94);
+}
+.color-palette-icon {
+  position: fixed;
+  top: 50vh;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem;
+  /* border: 2px solid #e5e7eb; */
+  background: white;
+  color: rgb(31 41 55);
+  width: fit-content;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1rem;
+  cursor: pointer;
+}
+.color-palette-icon:hover {
+  background: rgb(37, 99, 235);
+  fill: white;
+  color: white;
+}
+.color-palette-icon svg {
+  fill: rgb(37, 99, 235);
+}
+.color-palette-icon:hover,
+.color-palette-icon svg:hover {
+  background: rgb(37, 99, 235);
+  fill: white;
+}
+
+img:hover{
+  transform: scale(1.04);
+  transition: all 0.5s ease-in-out;
 }

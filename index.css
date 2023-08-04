@@ -70,6 +70,10 @@ img {
 .social-icon svg:hover {
   fill: #fdcf28;
 }
+.clock-container {
+  display: flex;
+  gap:10px;
+}
 .footer-widget:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -294,7 +298,7 @@ img {
   justify-content: space-between;
   width: 70%;
   margin: auto;
-  padding: 104px 0 0 0;
+  padding: 104px 0 70px;
 }
 .discover-left-section,
 .discover-right-section {
@@ -536,6 +540,29 @@ img {
   color: black;
   background-color: #fff;
 }
+.color-menu {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 30%;
+  z-index: 6;
+  border-radius: 5px;
+}
+/* Side Menu */
+#color-menu {
+  background: white;
+  color: #7a7a7a;
+  padding: 1.5em;
+}
+#color-menu ul {
+  list-style: none;
+  height: 100%;
+}
+
+#color-menu ul li {
+  /* border-bottom: 1px solid #7a7a7a; */
+  padding: 10px;
+}
 .hamburger-icon {
   display: none;
   background: transparent;
@@ -683,9 +710,10 @@ img {
 
 .coffee-cups {
   position: absolute;
-  text-align: left;
-  margin-top: -284px;
-  width: auto;
+  z-index: 1;
+ left: 80px;
+  margin-top: -150px;
+  width: 20em;
 }
 
 /* Media Queries */
@@ -704,6 +732,7 @@ img {
     padding: 80px 0;
   }
   .coffee-cups {
+    z-index: 1;
     margin-top: -150px;
     width: 20em;
     left: 50px;
@@ -802,6 +831,7 @@ img {
   }
   .coffee-cups {
     margin-top: -90px;
+    left: 10px;
   }
   .navbar ul {
     display: none;
